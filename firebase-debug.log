@@ -1,0 +1,59 @@
+[debug] [2024-04-25T15:08:57.822Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T15:08:57.826Z] Command:       /opt/homebrew/Cellar/node/21.1.0/bin/node /Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2024-04-25T15:08:57.827Z] CLI Version:   7.16.2
+[debug] [2024-04-25T15:08:57.827Z] Platform:      darwin
+[debug] [2024-04-25T15:08:57.827Z] Node Version:  v21.1.0
+[debug] [2024-04-25T15:08:57.827Z] Time:          Thu Apr 25 2024 22:08:57 GMT+0700 (Indochina Time)
+[debug] [2024-04-25T15:08:57.827Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T15:08:57.827Z] 
+[debug] [2024-04-25T15:08:57.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-25T15:08:57.831Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-lessons.
+[debug] [2024-04-25T15:08:57.835Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2024-04-25T15:08:57.835Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2024-04-25T15:08:58.032Z] <<< HTTP RESPONSE 200
+[debug] [2024-04-25T15:08:58.041Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fireship-lessons  
+ 
+[debug] [2024-04-25T15:08:58.535Z] <<< HTTP RESPONSE 403
+[debug] [2024-04-25T15:08:58.535Z] <<< HTTP RESPONSE BODY
+[debug] [2024-04-25T15:08:58.537Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-04-25T15:08:58.698Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo/node_modules/.pnpm/firebase-tools@7.16.2/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo/node_modules/.pnpm/firebase-tools@7.16.2/node_modules/firebase-tools/lib/api.js:40:35)
+    at self.callback (/Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo/node_modules/.pnpm/request@2.88.2/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:515:28)
+    at Request.emit (node:domain:488:12)
+    at Request.<anonymous> (/Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo/node_modules/.pnpm/request@2.88.2/node_modules/request/request.js:1154:10)
+    at Request.emit (node:events:515:28)
+    at Request.emit (node:domain:488:12)
+    at IncomingMessage.<anonymous> (/Users/nonnyss/CEDT/softwareEngineer/225-github-actions-demo/node_modules/.pnpm/request@2.88.2/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (node:events:629:28)
+    at IncomingMessage.emit (node:events:527:35)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1589:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[error] 
+[error] Error: Failed to get Firebase project fireship-lessons. Please make sure the project exists and your account has permission to access it.
